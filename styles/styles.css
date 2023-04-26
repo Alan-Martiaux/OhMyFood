@@ -148,6 +148,22 @@ footer {
   color: white;
 }
 
-footer ul {
-  font-family: "Shrikhand", sans-serif;
+footer .footer_title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  padding: 25px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+.footer_info div {
+  padding-bottom: 10px;
+}
+
+.footer_info .fa-solid {
+  padding: 0px 10px 0px 0px;
 }
