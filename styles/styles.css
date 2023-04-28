@@ -167,3 +167,69 @@ footer .footer_title {
 .footer_info .fa-solid {
   padding: 0px 10px 0px 0px;
 }
+
+/**###############################################################**/
+/**#                                                             #**/
+/**#                                                             #**/
+/**#                                                             #**/
+/**#                   PAGE SECONDAIRE                           #**/
+/**#                                                             #**/
+/**#                                                             #**/
+/**#                                                             #**/
+/**###############################################################**/
+/**
+.back {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.img_background {
+  width: 100%;
+}
+
+/** SECTION CHOIX REPAS **/
+/**
+.menu_card {
+  background-color: #f7f7f7;
+  position: relative;
+  margin-top: -40px;
+  border-radius: 40px;
+}
+.menu_title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  width: 95%;
+}
+
+.food_choice {
+  padding: 10px;
+  gap: 10px;
+}
+
+.food_title {
+  border: 1px solid #99e2d0;
+  width: 30px;
+  margin: 5px 10px 10px 0px;
+}
+.food_choice .card {
+  background-color: white;
+  width: 349px;
+  height: 69px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+*/
