@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  color: $mainColor;
+}
+
+footer {
+  background-color: black;
+  color: white;
+
+  .footer_title {
+    font-family: "Shrikhand", cursive;
+    font-style: italic;
+    padding: 25px;
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+h1 {
+  font-weight: 700;
+  padding: 15px;
+  font-family: "Shrikhand", cursive;
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  font-weight: 500;
+}
+img {
+  object-fit: cover;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

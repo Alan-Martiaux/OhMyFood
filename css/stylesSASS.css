@@ -1,11 +1,27 @@
-/* GENERAL */
+body {
+  margin: 0;
+  color: black(64, 207, 71);
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+footer .footer_title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  padding: 25px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0px;
 }
-h2 {
+
+h1 {
   font-weight: 700;
   padding: 15px;
+  font-family: "Shrikhand", cursive;
 }
 
 .card {
@@ -13,6 +29,7 @@ h2 {
   border-radius: 20px;
   font-weight: 500;
 }
+
 img {
   object-fit: cover;
 }
@@ -21,7 +38,7 @@ a {
   color: black;
   text-decoration: none;
 }
-/* HEADER */
+
 header {
   display: flex;
   justify-content: center;
@@ -31,8 +48,12 @@ header img {
   width: 165px;
 }
 
-/* MAIN */
-/* SECTION LOCATION */
+.back {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -42,12 +63,9 @@ header img {
   width: 100%;
   height: 50px;
 }
-
 .location span {
   padding-left: 8px;
 }
-
-/* SECTION EXPLORE */
 
 .explore {
   background-color: #f7f7f7;
@@ -70,22 +88,30 @@ header img {
   color: white;
 }
 
-/* SECTION FONCTIONNEMENT */
 .fonction {
   padding-bottom: 50px;
 }
+
 .help {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 35px;
 }
-
+.help .card {
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 322px;
+  height: 72px;
+}
 .help .fa-solid {
   position: absolute;
   left: 65px;
   color: gray;
 }
+
 .number {
   position: absolute;
   left: 20px;
@@ -96,20 +122,10 @@ header img {
   font-size: 14px;
 }
 
-.help .card {
-  align-items: center;
-  justify-content: center;
-  background-color: #f7f7f7;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  width: 322px;
-  height: 72px;
-}
-
-/* SECTION RESTO */
-
 .resto {
   background-color: #f7f7f7;
 }
+
 .resto_card {
   display: flex;
   flex-direction: column;
@@ -117,7 +133,6 @@ header img {
   gap: 15px;
   padding-bottom: 20px;
 }
-
 .resto_card .card {
   flex-direction: column;
   width: 322px;
@@ -136,19 +151,19 @@ header img {
   justify-content: space-between;
   padding: 10px;
 }
+
 .card_title {
   padding-bottom: 10px;
 }
+
 .heart {
   position: inherit;
 }
 
-/**FOOTER**/
 footer {
   background-color: black;
   color: white;
 }
-
 footer .footer_title {
   font-family: "Shrikhand", cursive;
   font-style: italic;
@@ -164,39 +179,21 @@ footer .footer_title {
 .footer_info div {
   padding-bottom: 10px;
 }
-
 .footer_info .fa-solid {
   padding: 0px 10px 0px 0px;
-}
-
-/**###############################################################**/
-/**#                                                             #**/
-/**#                                                             #**/
-/**#                                                             #**/
-/**#                   PAGE SECONDAIRE                           #**/
-/**#                                                             #**/
-/**#                                                             #**/
-/**#                                                             #**/
-/**###############################################################**/
-/**
-.back {
-  position: absolute;
-  left: 15px;
-  top: 15px;
 }
 
 .img_background {
   width: 100%;
 }
 
-/** SECTION CHOIX REPAS **/
-/**
 .menu_card {
-  background-color: #f7f7f7;
+  background-color: #f6f6f6;
   position: relative;
   margin-top: -40px;
   border-radius: 40px;
 }
+
 .menu_title {
   font-family: "Shrikhand", cursive;
   font-style: italic;
@@ -211,12 +208,6 @@ footer .footer_title {
   padding: 10px;
   gap: 10px;
 }
-
-.food_title {
-  border: 1px solid #99e2d0;
-  width: 30px;
-  margin: 5px 10px 10px 0px;
-}
 .food_choice .card {
   background-color: white;
   width: 349px;
@@ -226,6 +217,12 @@ footer .footer_title {
   margin-bottom: 15px;
 }
 
+.food_title {
+  border: 1px solid #99e2d0;
+  width: 30px;
+  margin: 5px 10px 10px 0px;
+}
+
 .price {
   display: flex;
   width: 150px;
@@ -233,4 +230,5 @@ footer .footer_title {
   justify-content: flex-end;
   align-items: flex-end;
 }
-*/
+
+/*# sourceMappingURL=stylesSASS.css.map */
