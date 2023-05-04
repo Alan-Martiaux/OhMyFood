@@ -1,0 +1,142 @@
+$cd-btn: #011c37;
+$cd-btn-int: white;
+$cd-txt: #15dea5;
+$cd-btn-start: rgba(1, 28, 55, 0);
+$cd-btn-end: rgba(1, 28, 55, 1);
+$loader-width: 100%;
+
+.barre {
+  display: flex;
+  &--one {
+    animation-delay: 500ms;
+  }
+  &--two {
+    animation-delay: 1500ms;
+  }
+  &--tree {
+    animation-delay: 2500ms;
+  }
+  &--one,
+  &--two,
+  &--tree {
+    background: linear-gradient(85deg, white, #ff79da);
+    border-radius: 0px 20px 20px 0px;
+    width: 100px;
+    height: 100px;
+    gap: 15px;
+    animation-duration: 1400ms;
+    animation-name: loader;
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  80% {
+    opacity: 0.85;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  .oh,
+  .my,
+  .food {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Shrikhand", cursive;
+    font-size: 100px;
+    color: white;
+    animation-name: loader_txt;
+    animation-duration: 1400ms;
+    opacity: 0;
+  }
+  .oh {
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
+  }
+  .my {
+    animation-delay: 1800ms;
+    animation-fill-mode: forwards;
+  }
+  .food {
+    animation-delay: 2800ms;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes loader_txt {
+  to {
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  opacity: 0.75;
+  animation-name: loader_color;
+  animation-delay: 4000ms;
+  animation-duration: 1400ms;
+  animation-fill-mode: forwards;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@keyframes loader_color {
+  100% {
+    background-color: transparent;
+    opacity: 0;
+  }
+}
+.excla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Shrikhand", cursive;
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  top: 40%;
+  animation-name: excla;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+  animation-delay: 3200ms;
+  opacity: 0;
+}
+
+@keyframes excla {
+  50% {
+    opacity: 0.85;
+    transform: scale(3);
+    transform: rotate(3turns);
+  }
+  75% {
+    opacity: 1;
+    transform: translate(210px, 180px);
+  }
+  80% {
+    opacity: 0.75;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(210px, 180px);
+  }
+}

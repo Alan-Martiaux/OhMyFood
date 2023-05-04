@@ -1,0 +1,45 @@
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .help {
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  h2 {
+    padding: 15px 15px 15px 120px;
+  }
+
+  .resto_card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    .card {
+      width: 490px;
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 114px;
+    .footer_info {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 15px;
+      padding-right: 50px;
+    }
+    .footer_title {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  .new {
+    left: 390px;
+  }
+  .img_background {
+    height: 383px;
+  }
+}

@@ -3,10 +3,21 @@
 }
 
 .menu_card {
-  background-color: #f6f6f6;
+  background-color: $backgroundcolor;
   position: relative;
   margin-top: -40px;
   border-radius: 40px;
+  animation-duration: 8s;
+  animation-name: menu_down;
+}
+
+@keyframes menu_down {
+  from {
+    height: 60px;
+  }
+  to {
+    height: 1000px;
+  }
 }
 .menu_title {
   font-family: "Shrikhand", cursive;
@@ -16,18 +27,25 @@
   justify-content: space-between;
   padding-top: 5px;
   width: 95%;
+  button {
+    border: none;
+    background-color: $backgroundcolor;
+  }
 }
 
 .food_choice {
   padding: 10px;
   gap: 10px;
   .card {
-    background-color: white;
+    background-color: $whitecard;
     width: 349px;
     height: 69px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+  }
+  .card_content {
+    width: 100%;
   }
 }
 
@@ -37,10 +55,176 @@
   margin: 5px 10px 10px 0px;
 }
 
+.card_subtitle {
+  font-size: 15px;
+}
+.price_and_valid {
+  display: flex;
+  align-items: center;
+}
 .price {
   display: flex;
-  width: 150px;
   height: 50px;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-right: 5px;
+}
+.card {
+  &--validation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 1500ms;
+  }
+  &:hover &--validation {
+    background-color: $newbackground;
+    width: 100px;
+    height: 69px;
+    transform: scale(1);
+  }
+}
+
+.card_txt {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.fa-circle-check {
+  color: white;
+}
+
+/**REVENIR **/
+
+.menu_name {
+  &--entrees {
+    animation-delay: 500ms;
+  }
+  &--plats {
+    animation-delay: 2200ms;
+  }
+  &--desserts {
+    animation-delay: 3800ms;
+  }
+  &--entrees,
+  &--plats,
+  &--desserts {
+    opacity: 0;
+    animation-name: menu_type;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menu_type {
+    from {
+      transform: scale(0);
+      width: 349px;
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+      width: 349px;
+    }
+  }
+}
+.food_placement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.entrance {
+  &--one,
+  &--two,
+  &--tree {
+    animation-duration: 1000ms;
+    animation-name: entrance;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  &--one {
+    animation-delay: 1000ms;
+  }
+  &--two {
+    animation-delay: 1500ms;
+  }
+  &--tree {
+    animation-delay: 2000ms;
+  }
+}
+@keyframes entrance {
+  from {
+    transform: scale(0);
+    width: 349px;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 349px;
+  }
+}
+
+.dishes {
+  &--one,
+  &--two,
+  &--tree {
+    animation-duration: 1000ms;
+    animation-name: dishes;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  &--one {
+    animation-delay: 2500ms;
+  }
+  &--two {
+    animation-delay: 3000ms;
+  }
+  &--tree {
+    animation-delay: 3500ms;
+  }
+}
+@keyframes dishes {
+  from {
+    transform: scale(0);
+    width: 349px;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 349px;
+  }
+}
+
+.desserts {
+  &--one,
+  &--two,
+  &--tree {
+    animation-duration: 1000ms;
+    animation-name: desserts;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  &--one {
+    animation-delay: 4000ms;
+  }
+  &--two {
+    animation-delay: 4500ms;
+  }
+  &--tree {
+    animation-delay: 5000ms;
+  }
+}
+@keyframes desserts {
+  from {
+    transform: scale(0);
+    width: 349px;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 349px;
+  }
 }

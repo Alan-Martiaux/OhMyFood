@@ -8,24 +8,39 @@
   gap: 35px;
   .card {
     align-items: center;
-    justify-content: center;
-    background-color: #f7f7f7;
+    justify-content: flex-start;
+    background-color: $greycard;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     width: 322px;
     height: 72px;
   }
   .fa-solid {
-    position: absolute;
-    left: 65px;
     color: gray;
   }
 }
 .number {
-  position: absolute;
-  left: 20px;
   background-color: #9356dc;
   padding: 5px 9px 5px 9px;
   border-radius: 15px;
   color: white;
   font-size: 14px;
+  animation-name: loader_number;
+  animation-duration: 4300ms;
+}
+@keyframes loader_number {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.number_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  right: 15px;
+  padding-right: 20px;
 }
