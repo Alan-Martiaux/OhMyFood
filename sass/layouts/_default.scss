@@ -50,17 +50,19 @@ a {
   &--solid {
     position: absolute;
     opacity: 0;
-    color: #9356dc;
-    /* background: linear-gradient(#9356dc, #99e2d0);
-    background-clip: content-box;
-    -webkit-background-clip: content-box;
-    color: transparent;*/
+    // color: #9356dc;
+    background: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   &:hover &--empty {
     opacity: 0;
+    transition: all 1000ms;
   }
   &:hover &--solid {
     opacity: 1;
+    transition: all 1000ms;
   }
 }
