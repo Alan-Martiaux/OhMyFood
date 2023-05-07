@@ -24,16 +24,6 @@
   border-radius: 15px;
   color: white;
   font-size: 14px;
-  animation-name: loader_number;
-  animation-duration: 4300ms;
-}
-@keyframes loader_number {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.5;
-  }
 }
 
 .number_icon {
@@ -43,4 +33,14 @@
   position: relative;
   right: 15px;
   padding-right: 20px;
+  animation-name: loader_icon;
+  animation-duration: 4140ms;
+}
+@keyframes loader_icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

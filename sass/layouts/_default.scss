@@ -41,6 +41,8 @@ a {
   align-items: center;
   margin-right: 16px;
   cursor: pointer;
+  animation-name: loader_icon;
+  animation-duration: 4140ms;
 
   &--empty {
     opacity: 1;
@@ -64,5 +66,14 @@ a {
   &:hover &--solid {
     opacity: 1;
     transition: all 1000ms;
+  }
+}
+
+@keyframes loader_icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
