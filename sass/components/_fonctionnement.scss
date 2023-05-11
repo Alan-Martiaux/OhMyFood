@@ -1,11 +1,11 @@
 .fonction {
-  padding-bottom: 50px;
+  height: 375px;
 }
 .help {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   .card {
     align-items: center;
     justify-content: flex-start;
@@ -36,11 +36,11 @@
   animation-name: loader_icon;
   animation-duration: 4140ms;
 }
-@keyframes loader_icon {
+/**@keyframes loader_icon {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
+}**/

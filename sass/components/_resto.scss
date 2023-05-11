@@ -2,14 +2,17 @@
   background-color: $backgroundcolor;
 }
 .resto_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 20px;
+  &--part_one,
+  &--part_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+  }
   .card {
     flex-direction: column;
-    width: 322px;
+    width: 340px;
     height: 251px;
     background-color: $whitecard;
     img {
@@ -28,22 +31,21 @@
   padding: 5px;
   position: relative;
   bottom: 170px;
-  left: 230px;
+  left: 250px;
   background-color: $newbackground;
   color: $newtextcolor;
   width: 70px;
   animation-name: loader_icon;
   animation-duration: 4140ms;
 }
-@keyframes loader_icon {
+/**@keyframes loader_icon {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
-
+}**/
 .card_resto {
   display: flex;
   align-items: center;

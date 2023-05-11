@@ -5,25 +5,60 @@
 }
 
 @media (min-width: 768px) {
+  /**  **/
+  h2 {
+    padding: 15px 15px 15px 120px;
+  }
+
+  /**HEADER**/
+  header {
+    height: 96px;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .img_background {
+    height: 383px;
+  }
+  /**LOCATION**/
+
+  /**EXPLORE**/
+
+  /**FONCTION**/
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 228px;
+  }
+  /**HELP**/
   .help {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
   }
-
-  h2 {
-    padding: 15px 15px 15px 120px;
-  }
-
+  /**RESTO**/
   .resto_card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-
+    &--part_one,
+    &--part_two {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
     .card {
       width: 490px;
     }
+  }
+  .new {
+    left: 390px;
+  }
+  /**MENU**/
+  .centrage {
+    display: flex;
+    justify-content: center;
   }
   .menu {
     width: 634px;
@@ -33,11 +68,11 @@
     gap: 20px;
     width: 100%;
   }
-
   .menu_card {
-    margin: -40px 145px 0px 145px;
+    width: 1055px;
   }
 
+  /**FOOTER**/
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -46,17 +81,12 @@
       flex-direction: row;
       align-items: flex-end;
       gap: 15px;
-      padding-right: 50px;
+      padding: 0px 50px 25px 25px;
     }
     .footer_title {
       display: flex;
       align-items: flex-end;
+      padding-bottom: 25px;
     }
-  }
-  .new {
-    left: 390px;
-  }
-  .img_background {
-    height: 383px;
   }
 }

@@ -70,27 +70,47 @@ a {
   transition: all 1000ms;
 }
 
-@keyframes loader_icon {
+/**@keyframes loader_icon {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
+}**/
+.button--explore, .button--command {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
 }
+.button--explore {
+  width: 218px;
+}
+.button--command {
+  width: 186px;
+}
+.button:hover {
+  background: linear-gradient(0deg, #ae80e5, #fface8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 header {
   display: flex;
   justify-content: center;
-  padding: 8px;
+  align-items: center;
+  height: 68px;
 }
 header img {
-  width: 165px;
+  width: 163px;
 }
 
 .back {
   position: absolute;
   left: 15px;
-  top: 15px;
 }
 
 .location {
@@ -117,30 +137,15 @@ header img {
   gap: 15px;
 }
 
-.button_explore {
-  width: 218px;
-  height: 50px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  color: white;
-  cursor: pointer;
-}
-.button_explore:hover {
-  background: linear-gradient(0deg, #ae80e5, #fface8);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
 .fonction {
-  padding-bottom: 50px;
+  height: 375px;
 }
 
 .help {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
 }
 .help .card {
   align-items: center;
@@ -173,19 +178,19 @@ header img {
   animation-duration: 4140ms;
 }
 
-@keyframes loader_icon {
+/**@keyframes loader_icon {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
+}**/
 .resto {
   background-color: #f6f6f6;
 }
 
-.resto_card {
+.resto_card--part_one, .resto_card--part_two {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,7 +199,7 @@ header img {
 }
 .resto_card .card {
   flex-direction: column;
-  width: 322px;
+  width: 340px;
   height: 251px;
   background-color: white;
 }
@@ -214,7 +219,7 @@ header img {
   padding: 5px;
   position: relative;
   bottom: 170px;
-  left: 230px;
+  left: 250px;
   background-color: #99e2d0;
   color: #008766;
   width: 70px;
@@ -222,14 +227,14 @@ header img {
   animation-duration: 4140ms;
 }
 
-@keyframes loader_icon {
+/**@keyframes loader_icon {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
+}**/
 .card_resto {
   display: flex;
   align-items: center;
@@ -248,6 +253,7 @@ header img {
 footer {
   background-color: black;
   color: white;
+  height: 186px;
 }
 footer ul {
   list-style-type: none;
@@ -255,7 +261,7 @@ footer ul {
 footer .footer_title {
   font-family: "Shrikhand", cursive;
   font-style: italic;
-  padding: 25px;
+  padding: 15px;
   font-size: 27px;
 }
 footer a {
@@ -265,7 +271,7 @@ footer a {
 .footer_info {
   display: flex;
   flex-direction: column;
-  padding: 0px 0px 25px 25px;
+  padding: 0px 0px 0px 25px;
 }
 .footer_info div {
   padding-bottom: 10px;
@@ -290,21 +296,20 @@ footer a {
   position: relative;
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
-  animation-duration: 8s;
-  animation-name: menu_down;
+  /**animation-duration: 8s;
+  animation-name: menu_down;**/
 }
 
-@keyframes menu_down {
+/**@keyframes menu_down {
   from {
-    height: 60px;
+    height: 6%;
   }
   to {
-    height: 1000px;
+    height: 100%;
   }
-}
+}**/
 .menu_title {
   font-family: "Shrikhand", cursive;
-  font-style: italic;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -356,6 +361,29 @@ footer a {
   padding-right: 5px;
 }
 
+.button_command {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0px;
+  opacity: 0;
+  animation-name: bouton;
+  animation-duration: 1000ms;
+  animation-delay: 8000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bouton {
+  from {
+    transform: scale(0);
+    width: 100%;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 100%;
+  }
+}
 /**VOIR POUR ROGNER LE TEXTE**/
 .card--validation {
   display: flex;
@@ -395,13 +423,13 @@ footer a {
 
 /**REVENIR **/
 .menu_name--entrees {
-  animation-delay: 500ms;
+  animation-delay: 250ms;
 }
 .menu_name--plats {
-  animation-delay: 2200ms;
+  animation-delay: 2700ms;
 }
 .menu_name--desserts {
-  animation-delay: 3800ms;
+  animation-delay: 5250ms;
 }
 .menu_name--entrees, .menu_name--plats, .menu_name--desserts {
   padding-top: 25px;
@@ -428,20 +456,23 @@ footer a {
   align-items: center;
 }
 
-.entrance--one, .entrance--two, .entrance--tree {
+.entrance--one, .entrance--two, .entrance--tree, .entrance--four {
   animation-duration: 1000ms;
   animation-name: entrance;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 .entrance--one {
-  animation-delay: 1000ms;
+  animation-delay: 625ms;
 }
 .entrance--two {
-  animation-delay: 1500ms;
+  animation-delay: 1250ms;
 }
 .entrance--tree {
-  animation-delay: 2000ms;
+  animation-delay: 1950ms;
+}
+.entrance--four {
+  animation-delay: 2500ms;
 }
 
 @keyframes entrance {
@@ -455,20 +486,23 @@ footer a {
     width: 100%;
   }
 }
-.dishes--one, .dishes--two, .dishes--tree {
+.dishes--one, .dishes--two, .dishes--tree, .dishes--four {
   animation-duration: 1000ms;
   animation-name: dishes;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 .dishes--one {
-  animation-delay: 2500ms;
-}
-.dishes--two {
   animation-delay: 3000ms;
 }
+.dishes--two {
+  animation-delay: 3650ms;
+}
 .dishes--tree {
-  animation-delay: 3500ms;
+  animation-delay: 4300ms;
+}
+.dishes--four {
+  animation-delay: 4950ms;
 }
 
 @keyframes dishes {
@@ -482,20 +516,23 @@ footer a {
     width: 100%;
   }
 }
-.desserts--one, .desserts--two, .desserts--tree {
+.desserts--one, .desserts--two, .desserts--tree, .desserts--four {
   animation-duration: 1000ms;
   animation-name: desserts;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 .desserts--one {
-  animation-delay: 4000ms;
+  animation-delay: 5550ms;
 }
 .desserts--two {
-  animation-delay: 4500ms;
+  animation-delay: 6200ms;
 }
 .desserts--tree {
-  animation-delay: 5000ms;
+  animation-delay: 6850ms;
+}
+.desserts--four {
+  animation-delay: 7500ms;
 }
 
 @keyframes desserts {
@@ -628,6 +665,7 @@ footer a {
   100% {
     background-color: transparent;
     opacity: 0;
+    display: none;
   }
 }
 .excla {
@@ -677,15 +715,37 @@ footer a {
   }
 }
 @media (min-width: 768px) {
+  /**  **/
+  h2 {
+    padding: 15px 15px 15px 120px;
+  }
+  /**HEADER**/
+  header {
+    height: 96px;
+  }
+  header img {
+    width: 200px;
+  }
+  .img_background {
+    height: 383px;
+  }
+  /**LOCATION**/
+  /**EXPLORE**/
+  /**FONCTION**/
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 228px;
+  }
+  /**HELP**/
   .help {
     flex-direction: row;
     justify-content: center;
     padding: 20px;
   }
-  h2 {
-    padding: 15px 15px 15px 120px;
-  }
-  .resto_card {
+  /**RESTO**/
+  .resto_card--part_one, .resto_card--part_two {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -693,6 +753,14 @@ footer a {
   }
   .resto_card .card {
     width: 490px;
+  }
+  .new {
+    left: 390px;
+  }
+  /**MENU**/
+  .centrage {
+    display: flex;
+    justify-content: center;
   }
   .menu {
     width: 634px;
@@ -703,8 +771,9 @@ footer a {
     width: 100%;
   }
   .menu_card {
-    margin: -40px 145px 0px 145px;
+    width: 1055px;
   }
+  /**FOOTER**/
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -714,17 +783,12 @@ footer a {
     flex-direction: row;
     align-items: flex-end;
     gap: 15px;
-    padding-right: 50px;
+    padding: 0px 50px 25px 25px;
   }
   footer .footer_title {
     display: flex;
     align-items: flex-end;
-  }
-  .new {
-    left: 390px;
-  }
-  .img_background {
-    height: 383px;
+    padding-bottom: 25px;
   }
 }
 

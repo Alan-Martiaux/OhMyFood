@@ -1,13 +1,14 @@
 footer {
   background-color: black;
   color: white;
+  height: 186px;
   ul {
     list-style-type: none;
   }
   .footer_title {
     font-family: "Shrikhand", cursive;
     font-style: italic;
-    padding: 25px;
+    padding: 15px;
     font-size: 27px;
   }
   a {
@@ -18,7 +19,7 @@ footer {
 .footer_info {
   display: flex;
   flex-direction: column;
-  padding: 0px 0px 25px 25px;
+  padding: 0px 0px 0px 25px;
   div {
     padding-bottom: 10px;
   }

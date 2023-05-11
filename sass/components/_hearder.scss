@@ -1,14 +1,14 @@
 header {
   display: flex;
   justify-content: center;
-  padding: 8px;
+  align-items: center;
+  height: 68px;
   img {
-    width: 165px;
+    width: 163px;
   }
 }
 
 .back {
   position: absolute;
   left: 15px;
-  top: 15px;
 }
