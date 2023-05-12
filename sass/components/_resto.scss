@@ -25,14 +25,15 @@
 }
 .new_section {
   height: 174px;
+  position: relative;
 }
 .new_txt {
   display: flex;
   justify-content: center;
   padding: 5px;
-  position: relative;
-  bottom: 170px;
-  left: 250px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   background-color: $newbackground;
   color: $newtextcolor;
   width: 70px;

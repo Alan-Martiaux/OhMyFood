@@ -114,8 +114,8 @@ header img {
 }
 
 .vide {
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 60%;
 }
 
 .barre {
@@ -204,6 +204,7 @@ header img {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 300;
 }
 
 .loader_button {
@@ -232,7 +233,7 @@ header img {
   100% {
     background-color: transparent;
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 .excla {
@@ -285,8 +286,12 @@ header img {
   width: 100%;
   height: 50px;
 }
-.location span {
+.location input {
   padding-left: 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  width: 10%;
 }
 
 .explore {
@@ -377,15 +382,16 @@ header img {
 
 .new_section {
   height: 174px;
+  position: relative;
 }
 
 .new_txt {
   display: flex;
   justify-content: center;
   padding: 5px;
-  position: relative;
-  bottom: 170px;
-  left: 250px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   background-color: #99e2d0;
   color: #008766;
   width: 70px;
@@ -534,10 +540,6 @@ footer a {
   width: 100%;
   margin: 30px 0px;
   opacity: 0;
-  animation-name: bouton;
-  animation-duration: 1000ms;
-  animation-delay: 8000ms;
-  animation-fill-mode: forwards;
 }
 
 @keyframes bouton {
@@ -702,7 +704,7 @@ footer a {
   animation-delay: 7500ms;
 }
 
-@keyframes desserts {
+@keyframes menu {
   from {
     transform: scale(0);
     width: 100%;
@@ -713,9 +715,137 @@ footer a {
     width: 100%;
   }
 }
+.delay_0 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0s;
+}
+
+.delay_1 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.delay_2 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.delay_3 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+
+.delay_4 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
+}
+
+.delay_5 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
+}
+
+.delay_6 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.8s;
+}
+
+.delay_7 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.1s;
+}
+
+.delay_8 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.4s;
+}
+
+.delay_9 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.7s;
+}
+
+.delay_10 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3s;
+}
+
+.delay_11 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.3s;
+}
+
+.delay_12 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.6s;
+}
+
+.delay_13 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.9s;
+}
+
+.delay_14 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 4.2s;
+}
+
+.delay_15 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 4.5s;
+}
+
 .vide {
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 60%;
 }
 
 .barre {
@@ -804,6 +934,7 @@ footer a {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: 300;
 }
 
 .loader_button {
@@ -832,7 +963,7 @@ footer a {
   100% {
     background-color: transparent;
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 .excla {

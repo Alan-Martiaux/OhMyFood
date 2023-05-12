@@ -82,10 +82,6 @@
   width: 100%;
   margin: 30px 0px;
   opacity: 0;
-  animation-name: bouton;
-  animation-duration: 1000ms;
-  animation-delay: 8000ms;
-  animation-fill-mode: forwards;
 }
 
 @keyframes bouton {
@@ -278,7 +274,7 @@
     animation-delay: 7500ms;
   }
 }
-@keyframes desserts {
+@keyframes menu {
   from {
     transform: scale(0);
     width: 100%;
@@ -288,5 +284,15 @@
     opacity: 1;
     transform: scale(1);
     width: 100%;
+  }
+}
+
+@for $i from 0 through 15 {
+  .delay_#{$i} {
+    animation-duration: 1000ms;
+    animation-name: menu;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: #{$i * 0.3}s;
   }
 }
