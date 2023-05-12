@@ -87,15 +87,15 @@ a {
   color: white;
   cursor: pointer;
 }
+.button--explore:hover, .button--command:hover {
+  background: linear-gradient(0deg, #ae80e5, #fface8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
 .button--explore {
   width: 218px;
 }
 .button--command {
   width: 186px;
-}
-.button:hover {
-  background: linear-gradient(0deg, #ae80e5, #fface8);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -190,6 +190,9 @@ header img {
   background-color: #f6f6f6;
 }
 
+.resto_card {
+  padding-bottom: 40px;
+}
 .resto_card--part_one, .resto_card--part_two {
   display: flex;
   flex-direction: column;
@@ -209,11 +212,11 @@ header img {
   border-radius: 20px 20px 0px 0px;
 }
 
-.test {
+.new_section {
   height: 174px;
 }
 
-.new {
+.new_txt {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -235,7 +238,7 @@ header img {
     opacity: 0;
   }
 }**/
-.card_resto {
+.resto_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,6 +275,7 @@ footer a {
   display: flex;
   flex-direction: column;
   padding: 0px 0px 0px 25px;
+  gap: 5px;
 }
 .footer_info div {
   padding-bottom: 10px;
@@ -717,7 +721,7 @@ footer a {
 @media (min-width: 768px) {
   /**  **/
   h2 {
-    padding: 15px 15px 15px 120px;
+    padding: 15px 15px 15px 200px;
   }
   /**HEADER**/
   header {
@@ -754,8 +758,11 @@ footer a {
   .resto_card .card {
     width: 490px;
   }
-  .new {
+  .new_txt {
     left: 390px;
+  }
+  .price {
+    padding-left: 150px;
   }
   /**MENU**/
   .centrage {
@@ -788,7 +795,7 @@ footer a {
   footer .footer_title {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 }
 

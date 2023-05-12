@@ -2,6 +2,7 @@
   background-color: $backgroundcolor;
 }
 .resto_card {
+  padding-bottom: 40px;
   &--part_one,
   &--part_two {
     display: flex;
@@ -22,10 +23,10 @@
     }
   }
 }
-.test {
+.new_section {
   height: 174px;
 }
-.new {
+.new_txt {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -46,7 +47,7 @@
     opacity: 0;
   }
 }**/
-.card_resto {
+.resto_content {
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -7,7 +7,7 @@
 @media (min-width: 768px) {
   /**  **/
   h2 {
-    padding: 15px 15px 15px 120px;
+    padding: 15px 15px 15px 200px;
   }
 
   /**HEADER**/
@@ -52,8 +52,11 @@
       width: 490px;
     }
   }
-  .new {
+  .new_txt {
     left: 390px;
+  }
+  .price {
+    padding-left: 150px;
   }
   /**MENU**/
   .centrage {
@@ -86,7 +89,7 @@
     .footer_title {
       display: flex;
       align-items: flex-end;
-      padding-bottom: 25px;
+      padding-bottom: 20px;
     }
   }
 }
