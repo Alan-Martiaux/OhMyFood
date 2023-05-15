@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: black(64, 207, 71);
+  color: black;
 }
 
 * {
@@ -96,6 +96,14 @@ a {
 }
 .button--command {
   width: 186px;
+}
+
+.index_title {
+  max-width: 1040px;
+}
+
+.input_search {
+  width: 100%;
 }
 
 header {
@@ -253,7 +261,7 @@ header img {
   opacity: 0;
 }
 
-@keyframes excla {
+/**@keyframes excla {
   50% {
     opacity: 0.85;
     transform: scale(3);
@@ -276,7 +284,7 @@ header img {
     opacity: 0;
     transform: translate(210px, 180px);
   }
-}
+}*/
 .location {
   display: flex;
   justify-content: center;
@@ -983,7 +991,7 @@ footer a {
   opacity: 0;
 }
 
-@keyframes excla {
+/**@keyframes excla {
   50% {
     opacity: 0.85;
     transform: scale(3);
@@ -1006,7 +1014,7 @@ footer a {
     opacity: 0;
     transform: translate(210px, 180px);
   }
-}
+}*/
 @media (min-width: 576px) {
   .menu_card {
     margin: -40px 0px 0px 0px;
