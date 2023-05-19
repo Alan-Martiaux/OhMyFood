@@ -23,7 +23,7 @@ $loader-width: 100%;
   &--one,
   &--two,
   &--tree {
-    background: linear-gradient(85deg, white, #ff79da);
+    background: linear-gradient(85deg, rgb(235, 231, 231), #ff79da);
     border-radius: 0px 20px 20px 0px;
     width: 20%;
 
@@ -36,7 +36,7 @@ $loader-width: 100%;
 }
 @keyframes loader {
   80% {
-    opacity: 0.85;
+    opacity: 0.95;
   }
   90% {
     opacity: 1;
@@ -65,15 +65,15 @@ $loader-width: 100%;
     opacity: 0;
   }
   .oh {
-    animation-delay: 800ms;
+    animation-delay: 900ms;
     animation-fill-mode: forwards;
   }
   .my {
-    animation-delay: 1800ms;
+    animation-delay: 1900ms;
     animation-fill-mode: forwards;
   }
   .food {
-    animation-delay: 2800ms;
+    animation-delay: 2900ms;
     animation-fill-mode: forwards;
   }
 }
@@ -131,7 +131,7 @@ $loader-width: 100%;
     visibility: hidden;
   }
 }
-.excla {
+/*.excla {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,7 @@ $loader-width: 100%;
   opacity: 0;
 }
 
-/**@keyframes excla {
+@keyframes excla {
   50% {
     opacity: 0.85;
     transform: scale(3);

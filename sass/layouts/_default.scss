@@ -1,6 +1,7 @@
 body {
   margin: 0;
   color: $mainColor;
+  min-width: 400px;
 }
 
 * {
@@ -105,10 +106,6 @@ a {
   &--command {
     width: 186px;
   }
-}
-
-.index_title {
-  max-width: 1040px;
 }
 
 .input_search {
