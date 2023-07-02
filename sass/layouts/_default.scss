@@ -36,6 +36,7 @@ a {
   text-decoration: none;
 }
 
+  //  ANIMATION DES COEURS 
 .icon_heart {
   display: flex;
   justify-content: center;
@@ -53,7 +54,6 @@ a {
   &--solid {
     position: absolute;
     opacity: 0;
-    // color: #9356dc;
     background: linear-gradient(#9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
@@ -71,7 +71,7 @@ a {
 }
 
 
-
+// Mise en surbrillance des boutons 
 .button {
   &--explore,
   &--command {
@@ -83,8 +83,7 @@ a {
     color: white;
     cursor: pointer;
     &:hover {
-      // opacity: 0.85;
-      background: linear-gradient(
+        background: linear-gradient(
         0deg,
         lighten(#9356dc, 10%),
         lighten(#ff79da, 10%)

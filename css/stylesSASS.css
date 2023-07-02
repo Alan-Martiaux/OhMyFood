@@ -71,14 +71,6 @@ a {
   transition: all 1000ms;
 }
 
-/**@keyframes loader_icon {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}**/
 .button--explore, .button--command {
   height: 50px;
   border: none;
@@ -241,47 +233,6 @@ header img {
     visibility: hidden;
   }
 }
-/*.excla {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: "Shrikhand", cursive;
-  font-size: 100px;
-  color: white;
-  position: absolute;
-  top: 40%;
-  animation-name: excla;
-  animation-duration: 1200ms;
-  animation-fill-mode: forwards;
-  animation-delay: 3200ms;
-  opacity: 0;
-}
-
-@keyframes excla {
-  50% {
-    opacity: 0.85;
-    transform: scale(3);
-    transform: rotate(3turns);
-  }
-  75% {
-    opacity: 1;
-    transform: translate(210px, 180px);
-  }
-  80% {
-    opacity: 0.75;
-  }
-  90% {
-    opacity: 0.5;
-  }
-  95% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(210px, 180px);
-  }
-}*/
 .location {
   display: flex;
   justify-content: center;
@@ -351,14 +302,6 @@ header img {
   animation-duration: 4140ms;
 }
 
-/**@keyframes loader_icon {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}**/
 .resto {
   display: flex;
   flex-direction: column;
@@ -407,14 +350,6 @@ header img {
   animation-duration: 4140ms;
 }
 
-/**@keyframes loader_icon {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}**/
 .resto_content {
   display: flex;
   align-items: center;
@@ -477,18 +412,8 @@ footer a {
   position: relative;
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
-  /**animation-duration: 8s;
-  animation-name: menu_down;**/
 }
 
-/**@keyframes menu_down {
-  from {
-    height: 6%;
-  }
-  to {
-    height: 100%;
-  }
-}**/
 .menu_title {
   font-family: "Shrikhand", cursive;
   display: flex;
@@ -561,7 +486,6 @@ footer a {
     width: 100%;
   }
 }
-/**VOIR POUR ROGNER LE TEXTE**/
 .card--validation {
   display: flex;
   align-items: center;
@@ -596,120 +520,6 @@ footer a {
 
 .fa-circle-check {
   color: white;
-}
-
-/**REVENIR **/
-.menu_name--entrees {
-  animation-delay: 250ms;
-}
-.menu_name--plats {
-  animation-delay: 2700ms;
-}
-.menu_name--desserts {
-  animation-delay: 5250ms;
-}
-.menu_name--entrees, .menu_name--plats, .menu_name--desserts {
-  padding-top: 25px;
-  opacity: 0;
-  animation-name: menu_type;
-  animation-duration: 1000ms;
-  animation-fill-mode: forwards;
-}
-@keyframes menu_type {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-
-.food_placement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.entrance--one, .entrance--two, .entrance--tree, .entrance--four {
-  animation-duration: 1000ms;
-  animation-name: entrance;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.entrance--one {
-  animation-delay: 625ms;
-}
-.entrance--two {
-  animation-delay: 1250ms;
-}
-.entrance--tree {
-  animation-delay: 1950ms;
-}
-.entrance--four {
-  animation-delay: 2500ms;
-}
-
-@keyframes entrance {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-.dishes--one, .dishes--two, .dishes--tree, .dishes--four {
-  animation-duration: 1000ms;
-  animation-name: dishes;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dishes--one {
-  animation-delay: 3000ms;
-}
-.dishes--two {
-  animation-delay: 3650ms;
-}
-.dishes--tree {
-  animation-delay: 4300ms;
-}
-.dishes--four {
-  animation-delay: 4950ms;
-}
-
-@keyframes dishes {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-.desserts--one, .desserts--two, .desserts--tree, .desserts--four {
-  animation-duration: 1000ms;
-  animation-name: desserts;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.desserts--one {
-  animation-delay: 5550ms;
-}
-.desserts--two {
-  animation-delay: 6200ms;
-}
-.desserts--tree {
-  animation-delay: 6850ms;
-}
-.desserts--four {
-  animation-delay: 7500ms;
 }
 
 @keyframes menu {
@@ -974,47 +784,6 @@ footer a {
     visibility: hidden;
   }
 }
-/*.excla {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: "Shrikhand", cursive;
-  font-size: 100px;
-  color: white;
-  position: absolute;
-  top: 40%;
-  animation-name: excla;
-  animation-duration: 1200ms;
-  animation-fill-mode: forwards;
-  animation-delay: 3200ms;
-  opacity: 0;
-}
-
-@keyframes excla {
-  50% {
-    opacity: 0.85;
-    transform: scale(3);
-    transform: rotate(3turns);
-  }
-  75% {
-    opacity: 1;
-    transform: translate(210px, 180px);
-  }
-  80% {
-    opacity: 0.75;
-  }
-  90% {
-    opacity: 0.5;
-  }
-  95% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 0;
-    transform: translate(210px, 180px);
-  }
-}*/
 @media (min-width: 576px) {
   .menu_card {
     margin: -40px 0px 0px 0px;

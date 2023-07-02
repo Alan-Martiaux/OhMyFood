@@ -90,7 +90,7 @@
 }
 
 
-
+// SELECTEUR DE PLATS
 .card {
   &--validation {
     display: flex;
@@ -115,7 +115,7 @@
     transition: all 1000ms;
   }
 }
-
+    // PERMET BON COMPORTEMENTS TXT
 .card_txt {
   width: 100%;
   padding-left: 15px;
@@ -126,158 +126,27 @@
     text-overflow: ellipsis;
   }
 }
+
 .fa-circle-check {
   color: white;
 }
 
+// ANIMATION MENU 
 
-.menu_name {
-  &--entrees {
-    animation-delay: 250ms;
-  }
-  &--plats {
-    animation-delay: 2700ms;
-  }
-  &--desserts {
-    animation-delay: 5250ms;
-  }
-  &--entrees,
-  &--plats,
-  &--desserts {
-    padding-top: 25px;
-    opacity: 0;
-    animation-name: menu_type;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes menu_type {
+  @keyframes menu {
     from {
       transform: scale(0);
       width: 100%;
     }
-
+  
     to {
       opacity: 1;
       transform: scale(1);
       width: 100%;
     }
   }
-}
-.food_placement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.entrance {
-  &--one,
-  &--two,
-  &--tree,
-  &--four {
-    animation-duration: 1000ms;
-    animation-name: entrance;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  &--one {
-    animation-delay: 625ms;
-  }
-  &--two {
-    animation-delay: 1250ms;
-  }
-  &--tree {
-    animation-delay: 1950ms;
-  }
-  &--four {
-    animation-delay: 2500ms;
-  }
-}
-@keyframes entrance {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-
-.dishes {
-  &--one,
-  &--two,
-  &--tree,
-  &--four {
-    animation-duration: 1000ms;
-    animation-name: dishes;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  &--one {
-    animation-delay: 3000ms;
-  }
-  &--two {
-    animation-delay: 3650ms;
-  }
-  &--tree {
-    animation-delay: 4300ms;
-  }
-  &--four {
-    animation-delay: 4950ms;
-  }
-}
-@keyframes dishes {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-
-.desserts {
-  &--one,
-  &--two,
-  &--tree,
-  &--four {
-    animation-duration: 1000ms;
-    animation-name: desserts;
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  &--one {
-    animation-delay: 5550ms;
-  }
-  &--two {
-    animation-delay: 6200ms;
-  }
-  &--tree {
-    animation-delay: 6850ms;
-  }
-  &--four {
-    animation-delay: 7500ms;
-  }
-}
-@keyframes menu {
-  from {
-    transform: scale(0);
-    width: 100%;
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-    width: 100%;
-  }
-}
-
+  //BOUCLES QUI PERMETS D'AJOUTER DES PLATS 
 @for $i from 0 through 15 {
   .delay_#{$i} {
     animation-duration: 1000ms;
