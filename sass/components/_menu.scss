@@ -13,18 +13,10 @@
   position: relative;
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
-  /**animation-duration: 8s;
-  animation-name: menu_down;**/
+
 }
 
-/**@keyframes menu_down {
-  from {
-    height: 6%;
-  }
-  to {
-    height: 100%;
-  }
-}**/
+
 .menu_title {
   font-family: "Shrikhand", cursive;
   display: flex;
@@ -97,7 +89,7 @@
   }
 }
 
-/**VOIR POUR ROGNER LE TEXTE**/
+
 
 .card {
   &--validation {
@@ -138,7 +130,6 @@
   color: white;
 }
 
-/**REVENIR **/
 
 .menu_name {
   &--entrees {
