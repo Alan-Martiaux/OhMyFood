@@ -279,7 +279,6 @@ header img {
 .resto {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #f6f6f6;
 }
 
@@ -776,6 +775,9 @@ footer a {
     width: 95%;
   }
   /**RESTO**/
+  .resto {
+    align-items: center;
+  }
   .resto_card--part_one, .resto_card--part_two {
     flex-direction: row;
     flex-wrap: wrap;
