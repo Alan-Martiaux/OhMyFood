@@ -43,8 +43,7 @@ a {
   align-items: center;
   margin-right: 16px;
   cursor: pointer;
-  animation-name: loader_icon;
-  animation-duration: 4140ms;
+
 
   &--empty {
     opacity: 1;
@@ -100,6 +99,7 @@ a {
   }
 }
 
+//RECHERCHE VILLE
 .input_search {
   width: 100%;
 }
