@@ -497,6 +497,12 @@ footer a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card_txt p,
+.card_txt h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .fa-circle-check {
   color: white;

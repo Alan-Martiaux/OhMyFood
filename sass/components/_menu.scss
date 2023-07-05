@@ -130,9 +130,14 @@
   width: 100%;
   padding-left: 15px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  p,
+  h4 {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
+  }
 }
 
 .fa-circle-check {
