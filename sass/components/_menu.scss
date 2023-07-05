@@ -2,7 +2,8 @@
   width: 100%;
 }
 .menu {
-  width: 349px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .menu_card {
@@ -13,6 +14,7 @@
   position: relative;
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
+  padding: 25px;
 
 }
 
@@ -31,8 +33,10 @@
 }
 
 .food_choice {
+  display: contents;
   padding: 10px;
   gap: 10px;
+  width: 100%;
   .card {
     background-color: $whitecard;
     width: 100%;
@@ -40,6 +44,9 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .card_content {
     width: 100%;
@@ -53,6 +60,9 @@
   margin: 5px 10px 10px 0px;
 }
 
+.food_placement {
+  width: 100%;
+}
 .card_subtitle {
   font-size: 15px;
 }
@@ -119,12 +129,10 @@
 .card_txt {
   width: 100%;
   padding-left: 15px;
-  p,
-  h4 {
-    white-space: nowrap;
+  white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+
 }
 
 .fa-circle-check {

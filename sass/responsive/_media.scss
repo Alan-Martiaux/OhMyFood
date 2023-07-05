@@ -3,6 +3,9 @@
     margin: -40px 0px 0px 0px;
   }
 }
+.food_placement {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   /**  **/
@@ -81,6 +84,14 @@
   }
   .menu_card {
     width: 1055px;
+  }
+
+  .food_choice {
+    width: 634px;
+    display: block;
+  }
+  .food_placement {
+    width: 634px;
   }
 
   /**FOOTER**/
