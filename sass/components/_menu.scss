@@ -2,7 +2,6 @@
   width: 100%;
 }
 .menu {
-  max-width: 350px;
   width: 100%;
 }
 
@@ -15,9 +14,7 @@
   margin-top: -40px;
   border-radius: 40px 40px 0px 0px;
   padding: 25px;
-
 }
-
 
 .menu_title {
   font-family: "Shrikhand", cursive;
@@ -99,7 +96,6 @@
   }
 }
 
-
 // SELECTEUR DE PLATS
 .card {
   &--validation {
@@ -125,7 +121,7 @@
     transition: all 1000ms;
   }
 }
-    // PERMET BON COMPORTEMENTS TXT
+// PERMET BON COMPORTEMENTS TXT
 .card_txt {
   width: 100%;
   padding-left: 15px;
@@ -144,23 +140,22 @@
   color: white;
 }
 
-// ANIMATION MENU 
+// ANIMATION MENU
 
-
-  @keyframes menu {
-    from {
-      transform: scale(0);
-      width: 100%;
-    }
-  
-    to {
-      opacity: 1;
-      transform: scale(1);
-      width: 100%;
-    }
+@keyframes menu {
+  from {
+    transform: scale(0);
+    width: 100%;
   }
 
-  //BOUCLES QUI PERMETS D'AJOUTER DES PLATS 
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 100%;
+  }
+}
+
+//BOUCLES QUI PERMETS D'AJOUTER DES PLATS
 @for $i from 0 through 15 {
   .delay_#{$i} {
     animation-duration: 1000ms;

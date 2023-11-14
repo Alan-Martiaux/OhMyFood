@@ -1,0 +1,854 @@
+body {
+  margin: 0;
+  color: black;
+  width: 100%;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+h1 {
+  font-weight: 700;
+  padding: 15px;
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  font-weight: 700;
+  padding: 15px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.icon_heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.icon_heart--empty {
+  opacity: 1;
+  color: black;
+  position: absolute;
+}
+.icon_heart--solid {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.icon_heart:hover .icon_heart--empty {
+  opacity: 0;
+  transition: all 1000ms;
+}
+.icon_heart:hover .icon_heart--solid {
+  opacity: 1;
+  transition: all 1000ms;
+}
+
+.button--explore, .button--command {
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+}
+.button--explore:hover, .button--command:hover {
+  background: linear-gradient(0deg, #ae80e5, #fface8);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.button--explore {
+  width: 218px;
+}
+.button--command {
+  width: 186px;
+}
+
+.input_search {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 68px;
+}
+header img {
+  width: 163px;
+}
+
+.back {
+  position: absolute;
+  left: 15px;
+}
+
+.vide {
+  width: 20%;
+  height: 60%;
+}
+
+.barre {
+  display: flex;
+}
+.barre--one {
+  animation-delay: 500ms;
+}
+.barre--two {
+  animation-delay: 1500ms;
+}
+.barre--tree {
+  animation-delay: 2500ms;
+}
+.barre--one, .barre--two, .barre--tree {
+  background: linear-gradient(85deg, rgb(235, 231, 231), #ff79da);
+  border-radius: 0px 20px 20px 0px;
+  width: 20%;
+  height: 60%;
+  gap: 15px;
+  animation-duration: 2500ms;
+  animation-name: loader;
+  opacity: 0;
+}
+
+@keyframes loader {
+  80% {
+    opacity: 0.95;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.container .oh,
+.container .my,
+.container .food {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  font-family: "Shrikhand", cursive;
+  font-size: 100px;
+  color: white;
+  animation-name: loader_txt;
+  animation-duration: 1400ms;
+  opacity: 0;
+}
+.container .oh {
+  animation-delay: 900ms;
+  animation-fill-mode: forwards;
+}
+.container .my {
+  animation-delay: 1900ms;
+  animation-fill-mode: forwards;
+}
+.container .food {
+  animation-delay: 2900ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader_txt {
+  to {
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  opacity: 1;
+  animation-name: loader_color;
+  animation-delay: 4000ms;
+  animation-duration: 1400ms;
+  animation-fill-mode: forwards;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 300;
+}
+
+@keyframes loader_color {
+  100% {
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+}
+.location input {
+  padding-left: 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  width: 140px;
+}
+
+.explore {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 30px 50px 30px;
+  gap: 15px;
+}
+
+.fonction {
+  height: 375px;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.help .card {
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 322px;
+  height: 72px;
+}
+.help .fa-solid {
+  color: gray;
+}
+
+.number {
+  background-color: #9356dc;
+  padding: 5px 9px 5px 9px;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.number_icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  right: 15px;
+  padding-right: 20px;
+}
+
+.resto {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+
+.resto_card {
+  padding-bottom: 40px;
+}
+.resto_card--part_one, .resto_card--part_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.resto_card .card {
+  flex-direction: column;
+  width: 340px;
+  height: 251px;
+  background-color: white;
+}
+.resto_card .card img {
+  width: 100%;
+  height: 174px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.new_section {
+  height: 174px;
+  position: relative;
+}
+
+.new_txt {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #99e2d0;
+  color: #008766;
+  width: 70px;
+}
+
+.resto_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card_title {
+  padding-bottom: 10px;
+}
+
+.heart {
+  position: inherit;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 186px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer .footer_title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  padding: 15px;
+  font-size: 27px;
+}
+footer a {
+  color: white;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 25px;
+  gap: 5px;
+}
+.footer_info div {
+  padding-bottom: 10px;
+}
+.footer_info .fa-solid {
+  padding: 0px 10px 0px 0px;
+}
+
+.img_background {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-top: -40px;
+  border-radius: 40px 40px 0px 0px;
+  padding: 25px;
+}
+
+.menu_title {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  width: 95%;
+}
+.menu_title button {
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.food_choice {
+  display: contents;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+}
+.food_choice .card {
+  background-color: white;
+  width: 100%;
+  height: 69px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.food_choice .card_content {
+  width: 100%;
+  transition: all 1500ms;
+}
+
+.food_title {
+  border: 1px solid #99e2d0;
+  width: 30px;
+  margin: 5px 10px 10px 0px;
+}
+
+.food_placement {
+  width: 100%;
+}
+
+.card_subtitle {
+  font-size: 15px;
+}
+
+.price_and_valid {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5px;
+}
+
+.button_command {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0px;
+  opacity: 0;
+}
+
+@keyframes bouton {
+  from {
+    transform: scale(0);
+    width: 100%;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 100%;
+  }
+}
+.card--validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 0px;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  transition: all 500ms;
+  opacity: 0;
+}
+.card:hover .card--validation {
+  width: 65px;
+  transition: all 1000ms;
+  opacity: 1;
+}
+.card:hover .card_content {
+  width: 60%;
+  transition: all 1000ms;
+}
+
+.card_txt {
+  width: 100%;
+  padding-left: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_txt p,
+.card_txt h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa-circle-check {
+  color: white;
+}
+
+@keyframes menu {
+  from {
+    transform: scale(0);
+    width: 100%;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    width: 100%;
+  }
+}
+.delay_0 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0s;
+}
+
+.delay_1 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.delay_2 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.delay_3 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.9s;
+}
+
+.delay_4 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
+}
+
+.delay_5 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
+}
+
+.delay_6 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1.8s;
+}
+
+.delay_7 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.1s;
+}
+
+.delay_8 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.4s;
+}
+
+.delay_9 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 2.7s;
+}
+
+.delay_10 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3s;
+}
+
+.delay_11 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.3s;
+}
+
+.delay_12 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.6s;
+}
+
+.delay_13 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 3.9s;
+}
+
+.delay_14 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 4.2s;
+}
+
+.delay_15 {
+  animation-duration: 1000ms;
+  animation-name: menu;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 4.5s;
+}
+
+.vide {
+  width: 20%;
+  height: 60%;
+}
+
+.barre {
+  display: flex;
+}
+.barre--one {
+  animation-delay: 500ms;
+}
+.barre--two {
+  animation-delay: 1500ms;
+}
+.barre--tree {
+  animation-delay: 2500ms;
+}
+.barre--one, .barre--two, .barre--tree {
+  background: linear-gradient(85deg, rgb(235, 231, 231), #ff79da);
+  border-radius: 0px 20px 20px 0px;
+  width: 20%;
+  height: 60%;
+  gap: 15px;
+  animation-duration: 2500ms;
+  animation-name: loader;
+  opacity: 0;
+}
+
+@keyframes loader {
+  80% {
+    opacity: 0.95;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.container .oh,
+.container .my,
+.container .food {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  font-family: "Shrikhand", cursive;
+  font-size: 100px;
+  color: white;
+  animation-name: loader_txt;
+  animation-duration: 1400ms;
+  opacity: 0;
+}
+.container .oh {
+  animation-delay: 900ms;
+  animation-fill-mode: forwards;
+}
+.container .my {
+  animation-delay: 1900ms;
+  animation-fill-mode: forwards;
+}
+.container .food {
+  animation-delay: 2900ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader_txt {
+  to {
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  opacity: 1;
+  animation-name: loader_color;
+  animation-delay: 4000ms;
+  animation-duration: 1400ms;
+  animation-fill-mode: forwards;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 300;
+}
+
+@keyframes loader_color {
+  100% {
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@media (min-width: 576px) {
+  .menu_card {
+    margin: -40px 0px 0px 0px;
+  }
+}
+.food_placement {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /**  **/
+  h2 {
+    padding: 15px 15px 15px 0px;
+  }
+  .index_title {
+    max-width: 1040px;
+    width: 100%;
+  }
+  /**HEADER**/
+  header {
+    height: 96px;
+  }
+  header img {
+    width: 200px;
+  }
+  .img_background {
+    height: 383px;
+  }
+  /**LOCATION**/
+  /**EXPLORE**/
+  /**FONCTION**/
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 228px;
+  }
+  /**HELP**/
+  .help {
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    width: 95%;
+  }
+  /**RESTO**/
+  .resto {
+    align-items: center;
+  }
+  .resto_card--part_one, .resto_card--part_two {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  .resto_card .card {
+    width: 490px;
+  }
+  .new_txt {
+    left: 390px;
+  }
+  .price {
+    padding-left: 150px;
+  }
+  /**MENU**/
+  .centrage {
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    width: 634px;
+  }
+  .menu_title {
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .menu_card {
+    width: 1055px;
+  }
+  .food_choice {
+    width: 634px;
+    display: block;
+  }
+  .food_placement {
+    width: 634px;
+  }
+  /**FOOTER**/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 114px;
+  }
+  footer .footer_info {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 0px 50px 25px 25px;
+  }
+  footer .footer_title {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
